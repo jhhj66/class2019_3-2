@@ -6527,9 +6527,9 @@
 										"$ref": "AAAAAAFtqhXFy6UbD0c="
 									},
 									"font": "Arial;13;0",
-									"left": 295,
+									"left": 292,
 									"top": 1014,
-									"width": 152.470703125,
+									"width": 159.6943359375,
 									"height": 13,
 									"alpha": 1.526791290020134,
 									"distance": 87.00574693662483,
@@ -6537,7 +6537,7 @@
 										"$ref": "AAAAAAFtqhXFy6UcDeo="
 									},
 									"edgePosition": 1,
-									"text": "wait join LockSupport.park"
+									"text": "wait, join, LockSupport.park"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -6622,9 +6622,9 @@
 										"$ref": "AAAAAAFtqhat0qVD1Iw="
 									},
 									"font": "Arial;13;0",
-									"left": 170,
-									"top": 988,
-									"width": 126.4453125,
+									"left": 168,
+									"top": 962,
+									"width": 132.7041015625,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -6632,7 +6632,7 @@
 										"$ref": "AAAAAAFtqhat0qVEtNQ="
 									},
 									"edgePosition": 1,
-									"text": "notify notifyAll timeout"
+									"text": "notify, notifyAll, timeout"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -6645,8 +6645,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 219,
-									"top": 983,
+									"left": 221,
+									"top": 955,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -6666,8 +6666,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 262,
-									"top": 999,
+									"left": 261,
+									"top": 977,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -6685,7 +6685,7 @@
 								"$ref": "AAAAAAFtqhNWnKQnrZM="
 							},
 							"lineStyle": 1,
-							"points": "265:1047;248:1000;265:952",
+							"points": "267:1047;248:976;261:952",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFtqhat0qVFePs="
@@ -7001,17 +7001,17 @@
 										"$ref": "AAAAAAFtqhgnxaWaTzU="
 									},
 									"font": "Arial;13;0",
-									"left": 471,
-									"top": 979,
-									"width": 123.55712890625,
+									"left": 496,
+									"top": 978,
+									"width": 127.1689453125,
 									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
+									"alpha": 3.4772317439365947,
+									"distance": 17.4928556845359,
 									"hostEdge": {
 										"$ref": "AAAAAAFtqhgnxaWbv1Q="
 									},
 									"edgePosition": 1,
-									"text": "monitor lock acquired"
+									"text": "monitor lock, acquired"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -7264,6 +7264,28 @@
 							"propertyLabel": {
 								"$ref": "AAAAAAFtqhi/kqXKD4c="
 							}
+						},
+						{
+							"_type": "EdgeLabelView",
+							"_id": "AAAAAAFtqhXFy6Udz6M=",
+							"_parent": {
+								"$ref": "AAAAAAFtqhXFy6UcDeo="
+							},
+							"model": {
+								"$ref": "AAAAAAFtqhXFy6UbD0c="
+							},
+							"font": "Arial;13;0",
+							"left": 292,
+							"top": 1014,
+							"width": 159.6943359375,
+							"height": 13,
+							"alpha": 1.526791290020134,
+							"distance": 87.00574693662483,
+							"hostEdge": {
+								"$ref": "AAAAAAFtqhXFy6UcDeo="
+							},
+							"edgePosition": 1,
+							"text": "wait, join, LockSupport.park"
 						}
 					]
 				}
@@ -8267,7 +8289,23 @@
 									"_parent": {
 										"$ref": "AAAAAAFtqhXFy6UbD0c="
 									},
-									"name": "wait join LockSupport.park"
+									"name": "wait"
+								},
+								{
+									"_type": "UMLEvent",
+									"_id": "AAAAAAFtqi3zU6X2ZYo=",
+									"_parent": {
+										"$ref": "AAAAAAFtqhXFy6UbD0c="
+									},
+									"name": "join"
+								},
+								{
+									"_type": "UMLEvent",
+									"_id": "AAAAAAFtqi3zU6X3/D8=",
+									"_parent": {
+										"$ref": "AAAAAAFtqhXFy6UbD0c="
+									},
+									"name": "LockSupport.park"
 								}
 							]
 						},
@@ -8290,7 +8328,23 @@
 									"_parent": {
 										"$ref": "AAAAAAFtqhat0qVD1Iw="
 									},
-									"name": "notify notifyAll timeout"
+									"name": "notify"
+								},
+								{
+									"_type": "UMLEvent",
+									"_id": "AAAAAAFtqi4d26X7leo=",
+									"_parent": {
+										"$ref": "AAAAAAFtqhat0qVD1Iw="
+									},
+									"name": "notifyAll"
+								},
+								{
+									"_type": "UMLEvent",
+									"_id": "AAAAAAFtqi4d26X8rgg=",
+									"_parent": {
+										"$ref": "AAAAAAFtqhat0qVD1Iw="
+									},
+									"name": "timeout"
 								}
 							]
 						},
@@ -8372,7 +8426,15 @@
 									"_parent": {
 										"$ref": "AAAAAAFtqhgnxaWaTzU="
 									},
-									"name": "monitor lock acquired"
+									"name": "monitor lock"
+								},
+								{
+									"_type": "UMLEvent",
+									"_id": "AAAAAAFtqi4+lKYAnlc=",
+									"_parent": {
+										"$ref": "AAAAAAFtqhgnxaWaTzU="
+									},
+									"name": "acquired"
 								}
 							]
 						},
